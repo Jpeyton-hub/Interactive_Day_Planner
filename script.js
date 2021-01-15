@@ -19,6 +19,14 @@ for (let i = 0; i < descArr.length; i++) {
     }
 };
 
+function appendTasks() {
+    for (let i = 0; i < descArr.length; i++) {
+        if (descArr[i].dataset.time in localStorage) {
+            let taskDetail = localStorage.getItem(descArr[i].dataset.time);
+            descArr[i].firstElementChild.innerText = taskDetail;            
+        };
+    }
+};
 
 $('.saveBtn').on('click', function() {
     $(this).toggleClass('activeBtn');
@@ -28,9 +36,12 @@ $('.saveBtn').on('click', function() {
         $(this).children()[0].setAttribute('class', 'fa fa-lock');
         $(this).toggleClass('activeBtn');
         $(this).toggleClass('saveBtn');
-        let task = e.target.parentElement.previousElementSibling.firstElementChild.value;
-        e.target.parentElement.previousElementSibling.innerText = task;
+        let task = e.target.parentElement.previousElementSibling.lastElementChild.value;
+        let time = e.target.parentElement.previousElementSibling.dataset.time;
+        localStorage.setItem(time, task);
+        appendTasks();
     });
 });
 
+appendTasks();
 

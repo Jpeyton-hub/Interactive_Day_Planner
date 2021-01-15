@@ -12,7 +12,7 @@ body {
     border: none;
     color: #000000;
     border-left: 1px solid black;
-    margin-top: -25px;
+    margin-top: -70px;
   }
 
   textarea:focus {
@@ -125,6 +125,10 @@ body {
   .activeBtn:hover {
     font-size: 40px;
     transition: all .3s ease-in-out;
+  }
+
+  .todo {
+      color: black;
   }
 
   
