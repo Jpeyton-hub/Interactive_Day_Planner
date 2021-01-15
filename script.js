@@ -17,16 +17,19 @@ for (let i = 0; i < descArr.length; i++) {
         descArr[i].classList.remove('present')
         descArr[i].classList.add('past')
     }
-}
+};
+
 
 $('.saveBtn').on('click', function() {
     $(this).toggleClass('activeBtn');
     $(this).children()[0].setAttribute('class', 'fa fa-unlock');
     $(this).toggleClass('saveBtn');
-    $('.activeBtn').one('click', function() {
+    $('.activeBtn').one('click', function(e) {
         $(this).children()[0].setAttribute('class', 'fa fa-lock');
         $(this).toggleClass('activeBtn');
         $(this).toggleClass('saveBtn');
+        let task = e.target.parentElement.previousElementSibling.firstElementChild.value;
+        e.target.parentElement.previousElementSibling.innerText = task;
     });
 });
 
