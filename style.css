@@ -1,0 +1,96 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  textarea{
+    position: relative;
+    background: transparent;
+    border: none;
+    color: #000000;
+    border-left: 1px solid black;
+    margin-top: -25px;
+    
+  }
+  
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+  
+  
+  .description{
+    white-space: pre-wrap;
+    height: 100%;
+    
+    
+  }
+  
+  .time-block{
+    display: flex;
+    padding: 5px;
+    text-align: right;
+    border-radius: 15px;
+    height: 100%;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;;
+  }
+  
+  .hour {
+    position: relative;
+    margin-top: 0;
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+  }
+  
+  .past {
+    background-color: #d3d3d3;
+    color: white;
+  }
+  
+  .present {
+    background-color: #ff6961;
+    color: white;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+  
+.buttonBlock {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+  .saveBtn {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #06AED5;
+    color: white;
+    margin-top: -32px;
+  }
+  
+  .saveBtn i {
+    margin-top: 10px;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  
