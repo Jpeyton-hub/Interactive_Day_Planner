@@ -10,3 +10,6 @@ For this project I took a bit of basic code and built upon it to create an inter
 ---
 below you will find a link to the project and a screenshot of the site! Please enjoy!
 
+[link to the site](https://jpeyton-hub.github.io/Interactive_Day_Planner/)
+
+![image of the site](./images/screenshot.jpeg)
